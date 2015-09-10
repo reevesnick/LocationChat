@@ -14,6 +14,8 @@
 		D1A512771B98987A00BA6509 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1A512761B98987A00BA6509 /* Images.xcassets */; };
 		D1A5127A1B98987A00BA6509 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1A512781B98987A00BA6509 /* LaunchScreen.xib */; };
 		D1A512861B98987A00BA6509 /* LocationChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A512851B98987A00BA6509 /* LocationChatTests.swift */; };
+		D1F977591BA1E3510078A1A0 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F977581BA1E3510078A1A0 /* LoginScreen.swift */; settings = {ASSET_TAGS = (); }; };
+		D1F9775B1BA1E3600078A1A0 /* SignupScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F9775A1BA1E3600078A1A0 /* SignupScreen.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		D1A5127F1B98987A00BA6509 /* LocationChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1A512841B98987A00BA6509 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1A512851B98987A00BA6509 /* LocationChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationChatTests.swift; sourceTree = "<group>"; };
+		D1F977581BA1E3510078A1A0 /* LoginScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		D1F9775A1BA1E3600078A1A0 /* SignupScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 		D1A512691B98987A00BA6509 /* LocationChat */ = {
 			isa = PBXGroup;
 			children = (
+				D1F977581BA1E3510078A1A0 /* LoginScreen.swift */,
+				D1F9775A1BA1E3600078A1A0 /* SignupScreen.swift */,
 				D1A5126C1B98987A00BA6509 /* AppDelegate.swift */,
 				D1A512711B98987A00BA6509 /* ViewController.swift */,
 				D1A512731B98987A00BA6509 /* Main.storyboard */,
@@ -159,6 +165,8 @@
 		D1A5125F1B98987A00BA6509 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				TargetAttributes = {
 					D1A512661B98987A00BA6509 = {
@@ -215,7 +223,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1A512721B98987A00BA6509 /* ViewController.swift in Sources */,
+				D1F977591BA1E3510078A1A0 /* LoginScreen.swift in Sources */,
 				D1A512701B98987A00BA6509 /* LocationChat.xcdatamodeld in Sources */,
+				D1F9775B1BA1E3600078A1A0 /* SignupScreen.swift in Sources */,
 				D1A5126D1B98987A00BA6509 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +422,7 @@
 				D1A5128B1B98987A00BA6509 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D1A5128C1B98987A00BA6509 /* Build configuration list for PBXNativeTarget "LocationChatTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +431,7 @@
 				D1A5128E1B98987A00BA6509 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
