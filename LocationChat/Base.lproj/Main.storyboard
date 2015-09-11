@@ -8,7 +8,7 @@
         <!--Item 1-->
         <scene sceneID="jhe-eF-CoS">
             <objects>
-                <viewController id="g1e-ri-XaE" sceneMemberID="viewController">
+                <viewController id="g1e-ri-XaE" customClass="MapViewController" customModule="LocationChat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XI3-GZ-F3U"/>
                         <viewControllerLayoutGuide type="bottom" id="NA2-pM-MfS"/>
@@ -34,7 +34,7 @@
         <!--Item-->
         <scene sceneID="r4F-60-bdW">
             <objects>
-                <tableViewController id="CBy-7t-WHP" sceneMemberID="viewController">
+                <tableViewController id="CBy-7t-WHP" customClass="ContactListViewController" customModule="LocationChat" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="7Ig-rc-lS7">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

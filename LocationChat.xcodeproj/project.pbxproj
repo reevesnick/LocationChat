@@ -14,8 +14,21 @@
 		D1A512771B98987A00BA6509 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1A512761B98987A00BA6509 /* Images.xcassets */; };
 		D1A5127A1B98987A00BA6509 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1A512781B98987A00BA6509 /* LaunchScreen.xib */; };
 		D1A512861B98987A00BA6509 /* LocationChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A512851B98987A00BA6509 /* LocationChatTests.swift */; };
+		D1C6AAA31BA31E66008E45B9 /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1C6AAA21BA31E66008E45B9 /* LoginScreen.storyboard */; settings = {ASSET_TAGS = (); }; };
+		D1C6AAA51BA32869008E45B9 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C6AAA41BA32869008E45B9 /* MapViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		D1C6AAA71BA328B2008E45B9 /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C6AAA61BA328B2008E45B9 /* ContactListViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		D1C6AAA91BA32AFB008E45B9 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1C6AAA81BA32AFB008E45B9 /* AddressBook.framework */; };
+		D1C6AAAB1BA32AFF008E45B9 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1C6AAAA1BA32AFF008E45B9 /* AddressBookUI.framework */; };
+		D1C6AAAD1BA32B06008E45B9 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1C6AAAC1BA32B06008E45B9 /* Social.framework */; };
+		D1C6AAAF1BA32B18008E45B9 /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1C6AAAE1BA32B18008E45B9 /* Contacts.framework */; };
+		D1C6AAB11BA32B1E008E45B9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1C6AAB01BA32B1E008E45B9 /* CoreData.framework */; };
+		D1C6AAB31BA32B27008E45B9 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1C6AAB21BA32B27008E45B9 /* CoreFoundation.framework */; };
+		D1C6AAB51BA32B32008E45B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1C6AAB41BA32B32008E45B9 /* Foundation.framework */; };
+		D1C6AAB71BA32B40008E45B9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1C6AAB61BA32B40008E45B9 /* MapKit.framework */; };
+		D1C6AAB91BA32B52008E45B9 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1C6AAB81BA32B52008E45B9 /* Twitter.framework */; };
 		D1F977591BA1E3510078A1A0 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F977581BA1E3510078A1A0 /* LoginScreen.swift */; settings = {ASSET_TAGS = (); }; };
 		D1F9775B1BA1E3600078A1A0 /* SignupScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F9775A1BA1E3600078A1A0 /* SignupScreen.swift */; settings = {ASSET_TAGS = (); }; };
+		E4128CA896FDCAABE63AD76E /* libPods-LocationChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 811CDD355D4713BD245E7AA7 /* libPods-LocationChat.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		811CDD355D4713BD245E7AA7 /* libPods-LocationChat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LocationChat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		816A688C345FCCCB28C2BC48 /* Pods-LocationChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocationChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-LocationChat/Pods-LocationChat.release.xcconfig"; sourceTree = "<group>"; };
 		D1A512671B98987A00BA6509 /* LocationChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1A5126B1B98987A00BA6509 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1A5126C1B98987A00BA6509 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,8 +55,21 @@
 		D1A5127F1B98987A00BA6509 /* LocationChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1A512841B98987A00BA6509 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1A512851B98987A00BA6509 /* LocationChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationChatTests.swift; sourceTree = "<group>"; };
+		D1C6AAA21BA31E66008E45B9 /* LoginScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginScreen.storyboard; sourceTree = "<group>"; };
+		D1C6AAA41BA32869008E45B9 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		D1C6AAA61BA328B2008E45B9 /* ContactListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
+		D1C6AAA81BA32AFB008E45B9 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		D1C6AAAA1BA32AFF008E45B9 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		D1C6AAAC1BA32B06008E45B9 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		D1C6AAAE1BA32B18008E45B9 /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
+		D1C6AAB01BA32B1E008E45B9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D1C6AAB21BA32B27008E45B9 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		D1C6AAB41BA32B32008E45B9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D1C6AAB61BA32B40008E45B9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D1C6AAB81BA32B52008E45B9 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		D1F977581BA1E3510078A1A0 /* LoginScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		D1F9775A1BA1E3600078A1A0 /* SignupScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupScreen.swift; sourceTree = "<group>"; };
+		FFFC5CCAB9618367443FBB06 /* Pods-LocationChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocationChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LocationChat/Pods-LocationChat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +77,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1C6AAB91BA32B52008E45B9 /* Twitter.framework in Frameworks */,
+				D1C6AAB71BA32B40008E45B9 /* MapKit.framework in Frameworks */,
+				D1C6AAB51BA32B32008E45B9 /* Foundation.framework in Frameworks */,
+				D1C6AAB31BA32B27008E45B9 /* CoreFoundation.framework in Frameworks */,
+				D1C6AAB11BA32B1E008E45B9 /* CoreData.framework in Frameworks */,
+				D1C6AAAF1BA32B18008E45B9 /* Contacts.framework in Frameworks */,
+				D1C6AAAD1BA32B06008E45B9 /* Social.framework in Frameworks */,
+				D1C6AAAB1BA32AFF008E45B9 /* AddressBookUI.framework in Frameworks */,
+				D1C6AAA91BA32AFB008E45B9 /* AddressBook.framework in Frameworks */,
+				E4128CA896FDCAABE63AD76E /* libPods-LocationChat.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,12 +100,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22A96E45BF43F7E329779E4C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				811CDD355D4713BD245E7AA7 /* libPods-LocationChat.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		51119C5E159B72930D4AF4E0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FFFC5CCAB9618367443FBB06 /* Pods-LocationChat.debug.xcconfig */,
+				816A688C345FCCCB28C2BC48 /* Pods-LocationChat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D1A5125E1B98987A00BA6509 = {
 			isa = PBXGroup;
 			children = (
 				D1A512691B98987A00BA6509 /* LocationChat */,
 				D1A512821B98987A00BA6509 /* LocationChatTests */,
 				D1A512681B98987A00BA6509 /* Products */,
+				51119C5E159B72930D4AF4E0 /* Pods */,
+				22A96E45BF43F7E329779E4C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,11 +140,16 @@
 		D1A512691B98987A00BA6509 /* LocationChat */ = {
 			isa = PBXGroup;
 			children = (
+				D1C6AABB1BA349B2008E45B9 /* Third Party Library */,
+				D1C6AABA1BA32B56008E45B9 /* Frameworks */,
 				D1F977581BA1E3510078A1A0 /* LoginScreen.swift */,
 				D1F9775A1BA1E3600078A1A0 /* SignupScreen.swift */,
 				D1A5126C1B98987A00BA6509 /* AppDelegate.swift */,
 				D1A512711B98987A00BA6509 /* ViewController.swift */,
+				D1C6AAA41BA32869008E45B9 /* MapViewController.swift */,
+				D1C6AAA61BA328B2008E45B9 /* ContactListViewController.swift */,
 				D1A512731B98987A00BA6509 /* Main.storyboard */,
+				D1C6AAA21BA31E66008E45B9 /* LoginScreen.storyboard */,
 				D1A512761B98987A00BA6509 /* Images.xcassets */,
 				D1A512781B98987A00BA6509 /* LaunchScreen.xib */,
 				D1A5126E1B98987A00BA6509 /* LocationChat.xcdatamodeld */,
@@ -121,6 +183,29 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D1C6AABA1BA32B56008E45B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D1C6AAB81BA32B52008E45B9 /* Twitter.framework */,
+				D1C6AAB61BA32B40008E45B9 /* MapKit.framework */,
+				D1C6AAB41BA32B32008E45B9 /* Foundation.framework */,
+				D1C6AAB21BA32B27008E45B9 /* CoreFoundation.framework */,
+				D1C6AAB01BA32B1E008E45B9 /* CoreData.framework */,
+				D1C6AAAE1BA32B18008E45B9 /* Contacts.framework */,
+				D1C6AAAC1BA32B06008E45B9 /* Social.framework */,
+				D1C6AAAA1BA32AFF008E45B9 /* AddressBookUI.framework */,
+				D1C6AAA81BA32AFB008E45B9 /* AddressBook.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D1C6AABB1BA349B2008E45B9 /* Third Party Library */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Third Party Library";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -128,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D1A512891B98987A00BA6509 /* Build configuration list for PBXNativeTarget "LocationChat" */;
 			buildPhases = (
+				2A6FE958171A511E57395A63 /* Check Pods Manifest.lock */,
 				D1A512631B98987A00BA6509 /* Sources */,
 				D1A512641B98987A00BA6509 /* Frameworks */,
 				D1A512651B98987A00BA6509 /* Resources */,
+				211D8B4A90F2C169775EA716 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -204,6 +291,7 @@
 			files = (
 				D1A512751B98987A00BA6509 /* Main.storyboard in Resources */,
 				D1A5127A1B98987A00BA6509 /* LaunchScreen.xib in Resources */,
+				D1C6AAA31BA31E66008E45B9 /* LoginScreen.storyboard in Resources */,
 				D1A512771B98987A00BA6509 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,15 +305,50 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		211D8B4A90F2C169775EA716 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LocationChat/Pods-LocationChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A6FE958171A511E57395A63 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D1A512631B98987A00BA6509 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D1A512721B98987A00BA6509 /* ViewController.swift in Sources */,
+				D1C6AAA51BA32869008E45B9 /* MapViewController.swift in Sources */,
 				D1F977591BA1E3510078A1A0 /* LoginScreen.swift in Sources */,
 				D1A512701B98987A00BA6509 /* LocationChat.xcdatamodeld in Sources */,
 				D1F9775B1BA1E3600078A1A0 /* SignupScreen.swift in Sources */,
+				D1C6AAA71BA328B2008E45B9 /* ContactListViewController.swift in Sources */,
 				D1A5126D1B98987A00BA6509 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,9 +474,15 @@
 		};
 		D1A5128A1B98987A00BA6509 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFFC5CCAB9618367443FBB06 /* Pods-LocationChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LocationChat/FacebookSDKs-iOS-20150910",
+				);
 				INFOPLIST_FILE = LocationChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -361,9 +490,15 @@
 		};
 		D1A5128B1B98987A00BA6509 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 816A688C345FCCCB28C2BC48 /* Pods-LocationChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LocationChat/FacebookSDKs-iOS-20150910",
+				);
 				INFOPLIST_FILE = LocationChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
