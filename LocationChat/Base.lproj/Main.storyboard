@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="SEA-2h-4Kn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A282b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="SEA-2h-4Kn">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
-        <!--Map-->
+        <!--Item 1-->
         <scene sceneID="jhe-eF-CoS">
             <objects>
                 <viewController id="g1e-ri-XaE" customClass="MapViewController" customModule="LocationChat" customModuleProvider="target" sceneMemberID="viewController">
@@ -13,24 +13,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="9EV-z1-UpD">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="9EV-z1-UpD">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                                 <animations/>
                             </mapView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="9EV-z1-UpD" secondAttribute="trailing" id="Vfe-CG-nvK"/>
-                            <constraint firstItem="9EV-z1-UpD" firstAttribute="leading" secondItem="hnQ-eg-yHf" secondAttribute="leading" id="cCG-NQ-Aag"/>
-                            <constraint firstItem="9EV-z1-UpD" firstAttribute="top" secondItem="hnQ-eg-yHf" secondAttribute="top" id="nU2-0A-to5"/>
-                            <constraint firstItem="9EV-z1-UpD" firstAttribute="bottom" secondItem="NA2-pM-MfS" secondAttribute="top" id="pRf-Sh-CKT"/>
-                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Map" id="Dzu-LK-YVF"/>
-                    <connections>
-                        <outlet property="mapView" destination="9EV-z1-UpD" id="63c-vi-eoI"/>
-                    </connections>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="Dzu-LK-YVF"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b0X-fq-0zz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
