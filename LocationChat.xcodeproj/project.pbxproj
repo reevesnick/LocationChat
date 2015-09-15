@@ -10,11 +10,9 @@
 		D1A5126D1B98987A00BA6509 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A5126C1B98987A00BA6509 /* AppDelegate.swift */; };
 		D1A512701B98987A00BA6509 /* LocationChat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D1A5126E1B98987A00BA6509 /* LocationChat.xcdatamodeld */; };
 		D1A512721B98987A00BA6509 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A512711B98987A00BA6509 /* ViewController.swift */; };
-		D1A512751B98987A00BA6509 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1A512731B98987A00BA6509 /* Main.storyboard */; };
 		D1A512771B98987A00BA6509 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1A512761B98987A00BA6509 /* Images.xcassets */; };
 		D1A5127A1B98987A00BA6509 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1A512781B98987A00BA6509 /* LaunchScreen.xib */; };
 		D1A512861B98987A00BA6509 /* LocationChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A512851B98987A00BA6509 /* LocationChatTests.swift */; };
-		D1C6AAA31BA31E66008E45B9 /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1C6AAA21BA31E66008E45B9 /* LoginScreen.storyboard */; settings = {ASSET_TAGS = (); }; };
 		D1C6AAA51BA32869008E45B9 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C6AAA41BA32869008E45B9 /* MapViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		D1C6AAA71BA328B2008E45B9 /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C6AAA61BA328B2008E45B9 /* ContactListViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		D1C6AAA91BA32AFB008E45B9 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1C6AAA81BA32AFB008E45B9 /* AddressBook.framework */; };
@@ -24,8 +22,9 @@
 		D1C6AAB11BA32B1E008E45B9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1C6AAB01BA32B1E008E45B9 /* CoreData.framework */; };
 		D1C6AAB31BA32B27008E45B9 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1C6AAB21BA32B27008E45B9 /* CoreFoundation.framework */; };
 		D1C6AAB51BA32B32008E45B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1C6AAB41BA32B32008E45B9 /* Foundation.framework */; };
-		D1C6AAB71BA32B40008E45B9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1C6AAB61BA32B40008E45B9 /* MapKit.framework */; };
 		D1C6AAB91BA32B52008E45B9 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1C6AAB81BA32B52008E45B9 /* Twitter.framework */; };
+		D1DEABF71BA8BCF600E927B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1DEABF61BA8BCF600E927B8 /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
+		D1DEABF81BA8BFB900E927B8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1C6AAB61BA32B40008E45B9 /* MapKit.framework */; };
 		D1F977591BA1E3510078A1A0 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F977581BA1E3510078A1A0 /* LoginScreen.swift */; settings = {ASSET_TAGS = (); }; };
 		D1F9775B1BA1E3600078A1A0 /* SignupScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F9775A1BA1E3600078A1A0 /* SignupScreen.swift */; settings = {ASSET_TAGS = (); }; };
 		E4128CA896FDCAABE63AD76E /* libPods-LocationChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 811CDD355D4713BD245E7AA7 /* libPods-LocationChat.a */; };
@@ -49,13 +48,11 @@
 		D1A5126C1B98987A00BA6509 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1A5126F1B98987A00BA6509 /* LocationChat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LocationChat.xcdatamodel; sourceTree = "<group>"; };
 		D1A512711B98987A00BA6509 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D1A512741B98987A00BA6509 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D1A512761B98987A00BA6509 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D1A512791B98987A00BA6509 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D1A5127F1B98987A00BA6509 /* LocationChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1A512841B98987A00BA6509 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1A512851B98987A00BA6509 /* LocationChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationChatTests.swift; sourceTree = "<group>"; };
-		D1C6AAA21BA31E66008E45B9 /* LoginScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginScreen.storyboard; sourceTree = "<group>"; };
 		D1C6AAA41BA32869008E45B9 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		D1C6AAA61BA328B2008E45B9 /* ContactListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
 		D1C6AAA81BA32AFB008E45B9 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
@@ -67,6 +64,7 @@
 		D1C6AAB41BA32B32008E45B9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D1C6AAB61BA32B40008E45B9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		D1C6AAB81BA32B52008E45B9 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		D1DEABF61BA8BCF600E927B8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
 		D1F977581BA1E3510078A1A0 /* LoginScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		D1F9775A1BA1E3600078A1A0 /* SignupScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupScreen.swift; sourceTree = "<group>"; };
 		FFFC5CCAB9618367443FBB06 /* Pods-LocationChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocationChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LocationChat/Pods-LocationChat.debug.xcconfig"; sourceTree = "<group>"; };
@@ -77,8 +75,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1DEABF81BA8BFB900E927B8 /* MapKit.framework in Frameworks */,
 				D1C6AAB91BA32B52008E45B9 /* Twitter.framework in Frameworks */,
-				D1C6AAB71BA32B40008E45B9 /* MapKit.framework in Frameworks */,
 				D1C6AAB51BA32B32008E45B9 /* Foundation.framework in Frameworks */,
 				D1C6AAB31BA32B27008E45B9 /* CoreFoundation.framework in Frameworks */,
 				D1C6AAB11BA32B1E008E45B9 /* CoreData.framework in Frameworks */,
@@ -148,8 +146,7 @@
 				D1A512711B98987A00BA6509 /* ViewController.swift */,
 				D1C6AAA41BA32869008E45B9 /* MapViewController.swift */,
 				D1C6AAA61BA328B2008E45B9 /* ContactListViewController.swift */,
-				D1A512731B98987A00BA6509 /* Main.storyboard */,
-				D1C6AAA21BA31E66008E45B9 /* LoginScreen.storyboard */,
+				D1DEABF61BA8BCF600E927B8 /* Main.storyboard */,
 				D1A512761B98987A00BA6509 /* Images.xcassets */,
 				D1A512781B98987A00BA6509 /* LaunchScreen.xib */,
 				D1A5126E1B98987A00BA6509 /* LocationChat.xcdatamodeld */,
@@ -289,9 +286,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1A512751B98987A00BA6509 /* Main.storyboard in Resources */,
+				D1DEABF71BA8BCF600E927B8 /* Main.storyboard in Resources */,
 				D1A5127A1B98987A00BA6509 /* LaunchScreen.xib in Resources */,
-				D1C6AAA31BA31E66008E45B9 /* LoginScreen.storyboard in Resources */,
 				D1A512771B98987A00BA6509 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,14 +368,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D1A512731B98987A00BA6509 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D1A512741B98987A00BA6509 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D1A512781B98987A00BA6509 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -482,7 +470,7 @@
 					"$(PROJECT_DIR)/LocationChat/FacebookSDKs-iOS-20150910",
 				);
 				INFOPLIST_FILE = LocationChat/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -498,7 +486,7 @@
 					"$(PROJECT_DIR)/LocationChat/FacebookSDKs-iOS-20150910",
 				);
 				INFOPLIST_FILE = LocationChat/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
