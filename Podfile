@@ -6,6 +6,8 @@ target 'LocationChat' do
     pod 'FBSDKCoreKit'
     pod 'FBSDKLoginKit'
     pod 'FBSDKShareKit'
+    pod 'SwiftyJSON' ,'~>2.1'
+    pod 'ORStackView'
 
 end
 
