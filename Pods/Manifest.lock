@@ -26,6 +26,10 @@ PODS:
   - Bolts/AppLinks (1.2.2):
     - Bolts/Tasks
   - Bolts/Tasks (1.2.2)
+  - Crashlytics (3.3.1)
+  - Fabric (1.5.1):
+    - Fabric/Base (= 1.5.1)
+  - Fabric/Base (1.5.1)
   - FBSDKCoreKit (4.6.0):
     - Bolts (~> 1.1)
     - FBSDKCoreKit/arc (= 4.6.0)
@@ -39,18 +43,28 @@ PODS:
     - FBSDKCoreKit
   - FBSDKShareKit (4.6.0):
     - FBSDKCoreKit
+  - TwitterCore (1.11.0)
+  - TwitterKit (1.11.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.5)
+  - Crashlytics
+  - Fabric
   - FBSDKCoreKit
   - FBSDKLoginKit
   - FBSDKShareKit
+  - TwitterCore
+  - TwitterKit
 
 SPEC CHECKSUMS:
   AFNetworking: 79f7eb1a0fcfa7beb409332b2ca49afe9ce53b05
   Bolts: 20a2bd788273360cb1e31530dc19b8544eef2544
+  Crashlytics: 0e61bdda9def51f1e99720f804eebe94865442b2
+  Fabric: 03c3b3fe77e11a2bc31421b989a9c7adaa4779a5
   FBSDKCoreKit: 9954492d90c5fd65ae831395697a1660360d61f1
   FBSDKLoginKit: 3d07febbfa884b9878cacba54f705bb41f07d4b6
   FBSDKShareKit: f474f1123791e215d0299b98b3ee92ddd9187d86
+  TwitterCore: 968f699142e622d3007fd5ab4d9d3cf92616d527
+  TwitterKit: 24f8f5b5bbd74d9f33c34b69dcc6fbc00266e1a4
 
 COCOAPODS: 0.38.2

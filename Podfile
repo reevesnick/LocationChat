@@ -2,13 +2,14 @@
 # platform :ios, '6.0'
 
 target 'LocationChat' do
-    pod 'AFNetworking', '~>2.5'
-    pod 'FBSDKCoreKit'
-    pod 'FBSDKLoginKit'
-    pod 'FBSDKShareKit'
-    pod 'SwiftyJSON' ,'~>2.1'
-    pod 'ORStackView'
-
+    pod 'AFNetworking', '~>2.5' #AFNetworking
+    pod 'FBSDKCoreKit'  #Facebook SDK Core Kit
+    pod 'FBSDKLoginKit' #Facebook SDK Login Kit
+    pod 'FBSDKShareKit' #Facebook SDK Share Kit
+    pod 'Fabric'        #Fabric-Tool use to intergrate TwitterKit, Crashlytics
+    pod 'Crashlytics'   #Crashlytics-Analytic tool to determine fatal crashes at runtime
+    pod 'TwitterKit'
+    pod 'TwitterCore'
 end
 
 target 'LocationChatTests' do

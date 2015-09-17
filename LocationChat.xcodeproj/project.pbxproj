@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D1118B141BAB20BB003F9AD7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1118B131BAB20BB003F9AD7 /* Security.framework */; };
+		D1118B161BAB216B003F9AD7 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D1118B151BAB216B003F9AD7 /* libz.tbd */; };
+		D1118B181BAB218A003F9AD7 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D1118B171BAB218A003F9AD7 /* libc++.tbd */; };
+		D1118B1A1BAB219B003F9AD7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1118B191BAB219B003F9AD7 /* SystemConfiguration.framework */; };
 		D1A5126D1B98987A00BA6509 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A5126C1B98987A00BA6509 /* AppDelegate.swift */; };
 		D1A512701B98987A00BA6509 /* LocationChat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D1A5126E1B98987A00BA6509 /* LocationChat.xcdatamodeld */; };
 		D1A512721B98987A00BA6509 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A512711B98987A00BA6509 /* ViewController.swift */; };
@@ -43,6 +47,10 @@
 /* Begin PBXFileReference section */
 		811CDD355D4713BD245E7AA7 /* libPods-LocationChat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LocationChat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		816A688C345FCCCB28C2BC48 /* Pods-LocationChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocationChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-LocationChat/Pods-LocationChat.release.xcconfig"; sourceTree = "<group>"; };
+		D1118B131BAB20BB003F9AD7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D1118B151BAB216B003F9AD7 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		D1118B171BAB218A003F9AD7 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		D1118B191BAB219B003F9AD7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D1A512671B98987A00BA6509 /* LocationChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1A5126B1B98987A00BA6509 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1A5126C1B98987A00BA6509 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +83,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1118B1A1BAB219B003F9AD7 /* SystemConfiguration.framework in Frameworks */,
+				D1118B181BAB218A003F9AD7 /* libc++.tbd in Frameworks */,
+				D1118B161BAB216B003F9AD7 /* libz.tbd in Frameworks */,
+				D1118B141BAB20BB003F9AD7 /* Security.framework in Frameworks */,
 				D1DEABF81BA8BFB900E927B8 /* MapKit.framework in Frameworks */,
 				D1C6AAB91BA32B52008E45B9 /* Twitter.framework in Frameworks */,
 				D1C6AAB51BA32B32008E45B9 /* Foundation.framework in Frameworks */,
@@ -101,6 +113,10 @@
 		22A96E45BF43F7E329779E4C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D1118B191BAB219B003F9AD7 /* SystemConfiguration.framework */,
+				D1118B171BAB218A003F9AD7 /* libc++.tbd */,
+				D1118B151BAB216B003F9AD7 /* libz.tbd */,
+				D1118B131BAB20BB003F9AD7 /* Security.framework */,
 				811CDD355D4713BD245E7AA7 /* libPods-LocationChat.a */,
 			);
 			name = Frameworks;
@@ -215,6 +231,7 @@
 				D1A512641B98987A00BA6509 /* Frameworks */,
 				D1A512651B98987A00BA6509 /* Resources */,
 				211D8B4A90F2C169775EA716 /* Copy Pods Resources */,
+				D1118B121BAB1FF5003F9AD7 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -331,6 +348,19 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
+		};
+		D1118B121BAB1FF5003F9AD7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/Fabric.framework/run\" 2cef81c11d986dba0f309d421c86932652335fec a6280392bc271aaabc8b65c7b9519403885b70da02633f81959248df34dcc288";
 		};
 /* End PBXShellScriptBuildPhase section */
 
