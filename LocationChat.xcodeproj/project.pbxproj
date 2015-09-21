@@ -13,7 +13,6 @@
 		D1118B1A1BAB219B003F9AD7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1118B191BAB219B003F9AD7 /* SystemConfiguration.framework */; };
 		D1A5126D1B98987A00BA6509 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A5126C1B98987A00BA6509 /* AppDelegate.swift */; };
 		D1A512701B98987A00BA6509 /* LocationChat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D1A5126E1B98987A00BA6509 /* LocationChat.xcdatamodeld */; };
-		D1A512721B98987A00BA6509 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A512711B98987A00BA6509 /* ViewController.swift */; };
 		D1A512771B98987A00BA6509 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1A512761B98987A00BA6509 /* Images.xcassets */; };
 		D1A5127A1B98987A00BA6509 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1A512781B98987A00BA6509 /* LaunchScreen.xib */; };
 		D1A512861B98987A00BA6509 /* LocationChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A512851B98987A00BA6509 /* LocationChatTests.swift */; };
@@ -31,7 +30,7 @@
 		D1DEABF81BA8BFB900E927B8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1C6AAB61BA32B40008E45B9 /* MapKit.framework */; };
 		D1F977591BA1E3510078A1A0 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F977581BA1E3510078A1A0 /* LoginScreen.swift */; settings = {ASSET_TAGS = (); }; };
 		D1F9775B1BA1E3600078A1A0 /* SignupScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F9775A1BA1E3600078A1A0 /* SignupScreen.swift */; settings = {ASSET_TAGS = (); }; };
-		E4128CA896FDCAABE63AD76E /* libPods-LocationChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 811CDD355D4713BD245E7AA7 /* libPods-LocationChat.a */; };
+		F5A1A2A952305C577037F0FC /* Pods_LocationChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A45A97FC018CF87EBB8F9E5 /* Pods_LocationChat.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		811CDD355D4713BD245E7AA7 /* libPods-LocationChat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LocationChat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A45A97FC018CF87EBB8F9E5 /* Pods_LocationChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LocationChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		816A688C345FCCCB28C2BC48 /* Pods-LocationChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocationChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-LocationChat/Pods-LocationChat.release.xcconfig"; sourceTree = "<group>"; };
 		D1118B131BAB20BB003F9AD7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		D1118B151BAB216B003F9AD7 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
@@ -55,7 +54,6 @@
 		D1A5126B1B98987A00BA6509 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1A5126C1B98987A00BA6509 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1A5126F1B98987A00BA6509 /* LocationChat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LocationChat.xcdatamodel; sourceTree = "<group>"; };
-		D1A512711B98987A00BA6509 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D1A512761B98987A00BA6509 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D1A512791B98987A00BA6509 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D1A5127F1B98987A00BA6509 /* LocationChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,7 +94,7 @@
 				D1C6AAAD1BA32B06008E45B9 /* Social.framework in Frameworks */,
 				D1C6AAAB1BA32AFF008E45B9 /* AddressBookUI.framework in Frameworks */,
 				D1C6AAA91BA32AFB008E45B9 /* AddressBook.framework in Frameworks */,
-				E4128CA896FDCAABE63AD76E /* libPods-LocationChat.a in Frameworks */,
+				F5A1A2A952305C577037F0FC /* Pods_LocationChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,7 +115,7 @@
 				D1118B171BAB218A003F9AD7 /* libc++.tbd */,
 				D1118B151BAB216B003F9AD7 /* libz.tbd */,
 				D1118B131BAB20BB003F9AD7 /* Security.framework */,
-				811CDD355D4713BD245E7AA7 /* libPods-LocationChat.a */,
+				4A45A97FC018CF87EBB8F9E5 /* Pods_LocationChat.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -159,7 +157,6 @@
 				D1F977581BA1E3510078A1A0 /* LoginScreen.swift */,
 				D1F9775A1BA1E3600078A1A0 /* SignupScreen.swift */,
 				D1A5126C1B98987A00BA6509 /* AppDelegate.swift */,
-				D1A512711B98987A00BA6509 /* ViewController.swift */,
 				D1C6AAA41BA32869008E45B9 /* MapViewController.swift */,
 				D1C6AAA61BA328B2008E45B9 /* ContactListViewController.swift */,
 				D1DEABF61BA8BCF600E927B8 /* Main.storyboard */,
@@ -232,6 +229,7 @@
 				D1A512651B98987A00BA6509 /* Resources */,
 				211D8B4A90F2C169775EA716 /* Copy Pods Resources */,
 				D1118B121BAB1FF5003F9AD7 /* ShellScript */,
+				F2F2437B10551C09F7B1FB6C /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -362,6 +360,21 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Fabric/Fabric.framework/run\" 2cef81c11d986dba0f309d421c86932652335fec a6280392bc271aaabc8b65c7b9519403885b70da02633f81959248df34dcc288";
 		};
+		F2F2437B10551C09F7B1FB6C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LocationChat/Pods-LocationChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -369,7 +382,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1A512721B98987A00BA6509 /* ViewController.swift in Sources */,
 				D1C6AAA51BA32869008E45B9 /* MapViewController.swift in Sources */,
 				D1F977591BA1E3510078A1A0 /* LoginScreen.swift in Sources */,
 				D1A512701B98987A00BA6509 /* LocationChat.xcdatamodeld in Sources */,
