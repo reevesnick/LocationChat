@@ -1,5 +1,6 @@
 # Uncomment this line to define a global platform for your project
 # platform :ios, '6.0'
+use_frameworks!
 
 target 'LocationChat' do
     pod 'AFNetworking', '~>2.5' #AFNetworking
@@ -10,6 +11,7 @@ target 'LocationChat' do
     pod 'Crashlytics'   #Crashlytics-Analytic tool to determine fatal crashes at runtime
     pod 'TwitterKit'
     pod 'TwitterCore'
+    pod 'SwiftyJSON'
 end
 
 target 'LocationChatTests' do

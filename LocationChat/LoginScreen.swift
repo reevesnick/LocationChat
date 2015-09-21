@@ -13,9 +13,9 @@ class LoginScreen: UIViewController {
     
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var password: UITextField!
-    @IBOutlet weak var comfirmPassword: UITextField!
-    @IBOutlet weak var email: UITextField!
     @IBOutlet weak var signupButton: UIButton!
+    @IBOutlet weak var loginButon: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +25,27 @@ class LoginScreen: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func loginButtonTapped(sender: AnyObject){
+        
+        let userEmail = username.text;
+        let userPassword = password.text;
+        
+        let userEmailStored = NSUserDefaults.standardUserDefaults().stringForKey("username");
+        let userPasswordStored = NSUserDefaults.standardUserDefaults().stringForKey("password");
+        
+        if (userEmailStored == userEmail){
+            if (userPasswordStored == userPassword){
+                // Login Successful
+                
+                NSUserDefaults.standardUserDefaults().setBool(true, forKey: "isUserLoggedIn");
+                NSUserDefaults.standardUserDefaults().synchronize();
+                
+                self.dismissViewControllerAnimated(true, completion: nil);
+            }
+        }
+        
     }
     
 }
