@@ -74,8 +74,110 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         let annotation3 = MKPointAnnotation()
         annotation3.coordinate = location3
         annotation3.title = "The Villages"
-        annotation3.subtitle = "Boarding"
+        //annotation3.subtitle = "Boarding"
         mapView.addAnnotation(annotation3)
+ 
+        // 1
+        let location4 = CLLocationCoordinate2D(
+            latitude: 36.074797,
+            longitude: -79.777629
+        )
+        // 2
+        let span4 = MKCoordinateSpanMake(0.05, 0.05)
+        let region4 = MKCoordinateRegion(center: location4, span: span4)
+        mapView.setRegion(region4, animated: true)
+        
+        //3
+        let annotation4 = MKPointAnnotation()
+        annotation4.coordinate = location4
+        annotation4.title = "A&T Four"
+        //annotation4.subtitle = ""
+        mapView.addAnnotation(annotation4)
+        
+        // 1
+        let location5 = CLLocationCoordinate2D(
+            latitude: 36.076557,
+            longitude: -79.768852
+        )
+        // 2
+        let span5 = MKCoordinateSpanMake(0.05, 0.05)
+        let region5 = MKCoordinateRegion(center: location5, span: span5)
+        mapView.setRegion(region5, animated: true)
+        
+        //3
+        let annotation5 = MKPointAnnotation()
+        annotation5.coordinate = location5
+        annotation5.title = "Corbett Sports Complex"
+        //annotation5.subtitle = ""
+        mapView.addAnnotation(annotation5)
+        
+        // 1
+        let location6 = CLLocationCoordinate2D(
+            latitude: 36.076713,
+            longitude: -79.770934
+        )
+        // 2
+        let span6 = MKCoordinateSpanMake(0.05, 0.05)
+        let region6 = MKCoordinateRegion(center: location6, span: span6)
+        mapView.setRegion(region6, animated: true)
+        
+        //3
+        let annotation6 = MKPointAnnotation()
+        annotation6.coordinate = location6
+        annotation6.title = "Aggie Dome"
+        ///annotation6.subtitle = ""
+        mapView.addAnnotation(annotation6)
+        
+        // 1
+        let location7 = CLLocationCoordinate2D(
+            latitude: 36.081110,
+            longitude: -79.770086
+        )
+        // 2
+        let span7 = MKCoordinateSpanMake(0.05, 0.05)
+        let region7 = MKCoordinateRegion(center: location7, span: span7)
+        mapView.setRegion(region7, animated: true)
+        
+        //3
+        let annotation7 = MKPointAnnotation()
+        annotation7.coordinate = location7
+        annotation7.title = "Aggie Football Stadium"
+        //annotation7.subtitle = ""
+        mapView.addAnnotation(annotation7)
+        
+        // 1
+        let location8 = CLLocationCoordinate2D(
+            latitude: 36.075385,
+            longitude: -79.769616
+        )
+        // 2
+        let span8 = MKCoordinateSpanMake(0.05, 0.05)
+        let region8 = MKCoordinateRegion(center: location8, span: span8)
+        mapView.setRegion(region8, animated: true)
+        
+        //3
+        let annotation8 = MKPointAnnotation()
+        annotation8.coordinate = location8
+        annotation8.title = "Sebasation"
+        annotation8.subtitle = "Health Center"
+        mapView.addAnnotation(annotation8)
+        
+        // 1
+        let location9 = CLLocationCoordinate2D(
+            latitude: 36.075265,
+            longitude: -79.772178
+        )
+        // 2
+        let span9 = MKCoordinateSpanMake(0.05, 0.05)
+        let region9 = MKCoordinateRegion(center: location9, span: span9)
+        mapView.setRegion(region9, animated: true)
+        
+        //3
+        let annotation9 = MKPointAnnotation()
+        annotation9.coordinate = location9
+        annotation9.title = "Tower"
+        annotation9.subtitle = "Clock"
+        mapView.addAnnotation(annotation9)
         
         //User can add a new location
         let longPress = UILongPressGestureRecognizer(target: self, action: "action:")

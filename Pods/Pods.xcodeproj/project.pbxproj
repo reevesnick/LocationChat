@@ -140,6 +140,8 @@
 		601E143DFD4EB91E61ADBD85023ED243 /* FBSDKMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A162EBE34F95C6CFC5AC8156139D3DC /* FBSDKMath.m */; };
 		6161BF08D89282DC835EBAF2DB84E3B2 /* FBSDKBridgeAPIResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = B121FA5FA0BFCBE3F79C54125707441F /* FBSDKBridgeAPIResponse.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		628BB2F27F4F91B866E71088AF35896F /* FBSDKPaymentObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 05F0B3CFF47004BBCEB8FE1A1B901BAF /* FBSDKPaymentObserver.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		630B3A861BB3503700D9C0F4 /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 630B3A851BB3503700D9C0F4 /* Contacts.framework */; };
+		630B3A881BB3505700D9C0F4 /* ContactsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 630B3A871BB3505700D9C0F4 /* ContactsUI.framework */; };
 		631C7B17E935C2DFAC45950759AE13C4 /* Pods-LocationChat-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E325928E93A412B0396A8F478AC1D65 /* Pods-LocationChat-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		64119ADD6569724F376C7E1E5E64B17E /* BFAppLinkTarget.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D7048C333F433ABDFC1EEB5DB70F4A1 /* BFAppLinkTarget.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6577D9190730558F976D48FBB4E7160D /* FBSDKCloseIcon.h in Headers */ = {isa = PBXBuildFile; fileRef = EE896F12BEDDC0BF985F0177531BA643 /* FBSDKCloseIcon.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -608,6 +610,8 @@
 		60CFAFA54349E88DD36726CB106C5A48 /* BFWebViewAppLinkResolver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFWebViewAppLinkResolver.m; path = Bolts/iOS/BFWebViewAppLinkResolver.m; sourceTree = "<group>"; };
 		60E03A3B4D2E1AD7ED64ADE8945170A4 /* FBSDKLoginManagerLoginResult+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBSDKLoginManagerLoginResult+Internal.h"; path = "FBSDKLoginKit/FBSDKLoginKit/Internal/FBSDKLoginManagerLoginResult+Internal.h"; sourceTree = "<group>"; };
 		6115405D385360AE28E2C732E48295C6 /* FBSDKLoginTooltipView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKLoginTooltipView.h; path = FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginTooltipView.h; sourceTree = "<group>"; };
+		630B3A851BB3503700D9C0F4 /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Contacts.framework; sourceTree = DEVELOPER_DIR; };
+		630B3A871BB3505700D9C0F4 /* ContactsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ContactsUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/ContactsUI.framework; sourceTree = DEVELOPER_DIR; };
 		63672CB7A8769C1A7A729BFA5A9AC5CC /* FBSDKLoginUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKLoginUtility.h; path = FBSDKLoginKit/FBSDKLoginKit/Internal/FBSDKLoginUtility.h; sourceTree = "<group>"; };
 		6468BEA948D7FE1427BEC4A2E38B6C6A /* TwitterKitResources.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
 		64A337532A407E7407E6088394433354 /* AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.xcconfig; sourceTree = "<group>"; };
@@ -886,6 +890,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				630B3A881BB3505700D9C0F4 /* ContactsUI.framework in Frameworks */,
+				630B3A861BB3503700D9C0F4 /* Contacts.framework in Frameworks */,
 				84A2426467299D93B4E74276497BF276 /* CoreGraphics.framework in Frameworks */,
 				A5DBE450A9C1EAD856CC8A7D24698C42 /* Foundation.framework in Frameworks */,
 				ECBB2FBD709002F73CE8823518B4DF54 /* MobileCoreServices.framework in Frameworks */,
@@ -1263,6 +1269,8 @@
 		454615B4F0D1EF1306B174DFD08FAB7F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				630B3A871BB3505700D9C0F4 /* ContactsUI.framework */,
+				630B3A851BB3503700D9C0F4 /* Contacts.framework */,
 				2D59E8633221D74FBBFDB3728570358E /* Bolts.framework */,
 				329980992F70BECD1208899952F75EC8 /* FBSDKCoreKit.framework */,
 				A21450532725037291F20EB16364553B /* iOS */,
@@ -2055,6 +2063,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					DBE2B51E7C94C9EC3597640AE33025A1 = {
+						DevelopmentTeam = L6WD86F9N5;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -2598,6 +2611,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 83B18FD04169E950B2A525A794659B54 /* AFNetworking-Private.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 2.6.0;
 				DEFINES_MODULE = YES;
@@ -2691,6 +2705,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 83B18FD04169E950B2A525A794659B54 /* AFNetworking-Private.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 2.6.0;
 				DEFINES_MODULE = YES;
