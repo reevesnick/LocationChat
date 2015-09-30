@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import FBSDKLoginKit
 
 class LoginScreen: UIViewController {
     
@@ -15,6 +16,8 @@ class LoginScreen: UIViewController {
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var signupButton: UIButton!
     @IBOutlet weak var loginButon: UIButton!
+    
+    //var fbl: FBLoginView = FBLoginView()
     
     
     override func viewDidLoad() {
@@ -45,6 +48,10 @@ class LoginScreen: UIViewController {
                 self.dismissViewControllerAnimated(true, completion: nil);
             }
         }
+        
+    }
+    
+    @IBAction func facebookLoginButtonTapped(sender: AnyObject){
         
     }
     

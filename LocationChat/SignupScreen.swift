@@ -8,7 +8,6 @@
 
 import Foundation
 import UIKit
-import SwiftyJSON
 
 
 
@@ -47,51 +46,16 @@ class SignupScreen : UIViewController{
         return;
     }
     
-  /*
+  
     let myurl = NSURL(string: "https://510lc.dank.site/userRegister.php");
     let request = NSMutableURLRequest(URL: myurl!);
     request.HTTPMethod = "POST";
     
     let postString = "username=\(userEmail)&password=\(userPassword)";
     request.HTTPBody = postString.dataUsingEncoding(NSUTF8StringEncoding);
+
     
-    let task = NSURLSession.sharedSession().dataTaskWithRequest(request){
-        data, response, error in
-        
-        if error != nil{
-            print("error=\(error)")
-            return
-        }
-        var err: NSError?
-        
-        
-        var json = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers) as! NSDictionary
-        if let parseJSON = json{
-            var resultValue = parseJSON["status"] as? String!
-            print("result: \(resultValue)")
-            
-            var isUserRegisterd:Bool = false;
-            if (resultValue == "Sucess"){
-                isUserRegisterd = true;
-            }
-            
-            var messageToDisplay:String = parseJSON["message"] as? String!;
-            if (!isUserRegisterd){
-                messageToDisplay = parseJSON["message"] as? String!;
-            }
-            
-            dispatch_sync(dispatch_get_main_queue(), {
-                let alertController = UIAlertController(title: "Success", message:
-                    "Successfully log in!", preferredStyle: UIAlertControllerStyle.Alert)
-                alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
-                
-                self.presentViewController(alertController, animated: true, completion: nil)
-                    });
-                }
-            }
-    task.resume()
-    
-  */
+  
     
     // Store Data. For Testing
     NSUserDefaults.standardUserDefaults().setObject(userEmail, forKey: "username");

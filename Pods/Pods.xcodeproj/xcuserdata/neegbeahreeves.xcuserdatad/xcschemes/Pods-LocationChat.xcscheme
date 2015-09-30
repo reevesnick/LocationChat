@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A452FFE71D49AD84F5ABCAB5"
+               BlueprintIdentifier = "E980BEAA8A817550CC6B0854"
                BuildableName = "Pods_LocationChat.framework"
                BlueprintName = "Pods-LocationChat"
                ReferencedContainer = "container:Pods.xcodeproj">
