@@ -2,7 +2,7 @@
 //  ContactCustomCell.swift
 //  LocationChat
 //
-//  Created by Neegbeah Reeves on 9/30/15.
+//  Created by Neegbeah Reeves, Brittany Simmions, and Nino Roberston  on 9/30/15.
 //
 //
 
