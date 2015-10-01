@@ -53,6 +53,7 @@ code_sign_if_enabled() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'Pods-LocationChat/AFNetworking.framework'
+  install_framework 'Pods-LocationChat/Alamofire.framework'
   install_framework 'Pods-LocationChat/Bolts.framework'
   install_framework 'Pods-LocationChat/FBSDKCoreKit.framework'
   install_framework 'Pods-LocationChat/FBSDKLoginKit.framework'
@@ -61,6 +62,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'Pods-LocationChat/AFNetworking.framework'
+  install_framework 'Pods-LocationChat/Alamofire.framework'
   install_framework 'Pods-LocationChat/Bolts.framework'
   install_framework 'Pods-LocationChat/FBSDKCoreKit.framework'
   install_framework 'Pods-LocationChat/FBSDKLoginKit.framework'

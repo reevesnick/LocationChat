@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class ContactCustomCell: UITableViewCell {
     @IBOutlet weak var contactNameLabel: UILabel!

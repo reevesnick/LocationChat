@@ -11,6 +11,8 @@ import CoreData
 import FBSDKCoreKit
 import Fabric
 import Crashlytics
+import TwitterKit
+import TwitterCore
 
 
 @UIApplicationMain
@@ -21,7 +23,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        Fabric.with([Crashlytics.self()])
+        //Fabric.with([Crashlytics.self()])
+        Fabric.with([Crashlytics.self(), Twitter.self()])
+
+        
+        //Twitter.sharedInstance().startWithConsumerKey("your_key", consumerSecret: "your_secret")
+        //Fabric.with([Twitter.sharedInstance()])
+        
+        
 
         return true
     }

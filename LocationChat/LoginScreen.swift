@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 import FBSDKLoginKit
+import Twitter
+import TwitterKit
 
 class LoginScreen: UIViewController {
     
@@ -23,6 +25,17 @@ class LoginScreen: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        // Twitter Render Button and Login
+        let logInButton = TWTRLogInButton(logInCompletion: { session, error in
+            if (session != nil) {
+                print("signed in as \(session!.userName)");
+            } else {
+                print("error: \(error!.localizedDescription)");
+            }
+        })
+        logInButton.center = self.view.center
+        self.view.addSubview(logInButton)
     }
     
     override func didReceiveMemoryWarning() {

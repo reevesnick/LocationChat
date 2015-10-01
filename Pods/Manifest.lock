@@ -20,13 +20,14 @@ PODS:
   - AFNetworking/UIKit (2.6.0):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - Alamofire (2.0.2)
   - Bolts (1.3.0):
     - Bolts/AppLinks (= 1.3.0)
     - Bolts/Tasks (= 1.3.0)
   - Bolts/AppLinks (1.3.0):
     - Bolts/Tasks
   - Bolts/Tasks (1.3.0)
-  - Crashlytics (3.3.1)
+  - Crashlytics (3.3.3)
   - Fabric (1.5.1):
     - Fabric/Base (= 1.5.1)
   - Fabric/Base (1.5.1)
@@ -44,11 +45,12 @@ PODS:
   - FBSDKShareKit (4.6.0):
     - FBSDKCoreKit
   - SwiftyJSON (2.3.0)
-  - TwitterCore (1.11.2)
-  - TwitterKit (1.11.2)
+  - TwitterCore (1.11.3)
+  - TwitterKit (1.11.3)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.5)
+  - Alamofire (~> 2.0)
   - Crashlytics
   - Fabric
   - FBSDKCoreKit
@@ -60,14 +62,15 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 79f7eb1a0fcfa7beb409332b2ca49afe9ce53b05
+  Alamofire: 8edbab00802a752bb5240cc2abe70e7e881488ad
   Bolts: 805a4a87413e49d4a0c2b7d469084cbc46b09342
-  Crashlytics: 0e61bdda9def51f1e99720f804eebe94865442b2
+  Crashlytics: 9120a5c1515655e57a65e565e2eae8dd326be2e9
   Fabric: 03c3b3fe77e11a2bc31421b989a9c7adaa4779a5
   FBSDKCoreKit: 9954492d90c5fd65ae831395697a1660360d61f1
   FBSDKLoginKit: 3d07febbfa884b9878cacba54f705bb41f07d4b6
   FBSDKShareKit: f474f1123791e215d0299b98b3ee92ddd9187d86
   SwiftyJSON: 8d6b61a70277ef2a5d710d372e06e7e2d87fb9e4
-  TwitterCore: 79a35ada3dfb88d371b990d2ef62d72acde3ea7c
-  TwitterKit: 4390d4a31c46823883a9bcd1e34ec3694333dfe7
+  TwitterCore: ac822b826d021c483569d3d0588645dfa543bee9
+  TwitterKit: 8900e0032610749cebb37a9950f40fd1da606587
 
 COCOAPODS: 0.38.2

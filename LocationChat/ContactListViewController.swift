@@ -8,9 +8,17 @@
 
 import Foundation
 import MapKit
+import ContactsUI
+import Contacts
+import AddressBook
+import AddressBookUI
 
 class ContactListViewController: UITableViewController{
     let contactName = ["Neegbeah","Brittany","Nino"];
+    
+    let authStatus = ABAddressBookGetAuthorizationStatus()
+    
+   
     
     
     //let contactPic = [""];
