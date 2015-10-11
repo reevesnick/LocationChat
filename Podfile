@@ -3,6 +3,8 @@
 
 use_frameworks!
 target 'LocationChat' do
+    source 'https://github.com/CocoaPods/Specs.git'
+
     pod 'AFNetworking', '~>2.5' #AFNetworking
     pod 'FBSDKCoreKit'  #Facebook SDK Core Kit
     pod 'FBSDKLoginKit' #Facebook SDK Login Kit
@@ -13,6 +15,7 @@ target 'LocationChat' do
     pod 'TwitterCore' #TwitterCore Fabric
     pod 'SwiftyJSON'
     pod 'Alamofire', '~>2.0'
+    pod 'PubNub'
 end
 
 target 'LocationChatTests' do

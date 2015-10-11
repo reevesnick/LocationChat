@@ -15,8 +15,23 @@ import TwitterKit
 import TwitterCore
 
 
+
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, PNObjectEventListener {
+    
+    var client : PubNub
+    var config : PNConfiguration
+    
+    override init() {
+        config = PNConfiguration(publishKey: "Demo", subscribeKey: "Demo")
+        client = PubNub.clientWithConfiguration(config)
+        client.subscribeToChannels(["Your_Channel"], withPresence: false)
+        client.publish("Swift+PubNub!", toChannel: "Your_Channel", compressed: false, withCompletion: nil)
+        
+        super.init()
+        client.addListener(self)
+    }
+
 
     var window: UIWindow?
 
@@ -29,9 +44,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //Twitter.sharedInstance().startWithConsumerKey("your_key", consumerSecret: "your_secret")
         //Fabric.with([Twitter.sharedInstance()])
-        
-        
-
+    
         return true
     }
 

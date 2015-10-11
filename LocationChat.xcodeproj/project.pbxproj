@@ -32,7 +32,7 @@
 		D1DEABF81BA8BFB900E927B8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1C6AAB61BA32B40008E45B9 /* MapKit.framework */; };
 		D1F977591BA1E3510078A1A0 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F977581BA1E3510078A1A0 /* LoginScreen.swift */; settings = {ASSET_TAGS = (); }; };
 		D1F9775B1BA1E3600078A1A0 /* SignupScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F9775A1BA1E3600078A1A0 /* SignupScreen.swift */; settings = {ASSET_TAGS = (); }; };
-		F5A1A2A952305C577037F0FC /* Pods_LocationChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A45A97FC018CF87EBB8F9E5 /* Pods_LocationChat.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		F5A1A2A952305C577037F0FC /* Pods_LocationChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A45A97FC018CF87EBB8F9E5 /* Pods_LocationChat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +52,7 @@
 		D1118B151BAB216B003F9AD7 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		D1118B171BAB218A003F9AD7 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		D1118B191BAB219B003F9AD7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D13E4E581BC9D1BC00A07F03 /* LocationChat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LocationChat-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		D148E5621BBC7FE900FD57F0 /* ContactCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactCustomCell.swift; sourceTree = "<group>"; };
 		D148E5641BBC810F00FD57F0 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		D1A512671B98987A00BA6509 /* LocationChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,6 +167,7 @@
 		D1A512691B98987A00BA6509 /* LocationChat */ = {
 			isa = PBXGroup;
 			children = (
+				D13E4E581BC9D1BC00A07F03 /* LocationChat-Bridging-Header.h */,
 				D148E5611BBC7FB800FD57F0 /* Contact */,
 				D1C6AABA1BA32B56008E45B9 /* Frameworks */,
 				D1F977581BA1E3510078A1A0 /* LoginScreen.swift */,
@@ -277,6 +279,11 @@
 					D1A512661B98987A00BA6509 = {
 						CreatedOnToolsVersion = 6.4;
 						DevelopmentTeam = L6WD86F9N5;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					D1A5127E1B98987A00BA6509 = {
 						CreatedOnToolsVersion = 6.4;
@@ -529,6 +536,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.app.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "LocationChat-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -549,6 +557,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.app.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "LocationChat-Bridging-Header.h";
 			};
 			name = Release;
 		};

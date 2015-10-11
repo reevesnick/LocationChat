@@ -19,6 +19,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>CocoaLumberjack.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>FBSDKCoreKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -39,6 +44,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>PubNub.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SwiftyJSON.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,42 +57,52 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>01C8700BE7F3F28823977BACBB29E65B</key>
+		<key>4338C87B57002370CF769C57292A417D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>128AC0D6E4E9E647A5E5B712F8348F5B</key>
+		<key>4878C70B21CA37D7CB8A476BF986741B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6BB54E8DD58BA8E6DDE4BE90770C03DC</key>
+		<key>4B2F30D90D85A544E9EFE2A49D392C25</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B077D10B5F4B704AA5547A3A825B8B46</key>
+		<key>57ADC05E440A960212657DE6DA1FEDD5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B9A04D3C9B208813656510FDA8ADAE02</key>
+		<key>5D69761C2CD2A1E5C013537B29CAB4CF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E96110FE01C608FA4AB362858760AFCB</key>
+		<key>9341A4EA2E1211609736A33B1A69EBC7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EFC6E9C8812495F604D397C66B7B0B2E</key>
+		<key>94A50FB884552F1E25589DD6EA641782</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F653C95C8B284C4A0C937FAC93B63AFA</key>
+		<key>C8C8DB49020298FFE4817EAEE8AE2ABC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F5ACF367AE3BD7A7F2AF2D430901DF7B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F77CDB2B7EBCB89296A4C58420E799D9</key>
 		<dict>
 			<key>primary</key>
 			<true/>

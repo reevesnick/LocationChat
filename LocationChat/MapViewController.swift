@@ -10,6 +10,8 @@ import UIKit
 import MapKit
 import CoreLocation
 
+
+
 class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
     @IBOutlet weak var mapView: MKMapView!
@@ -29,7 +31,17 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         self.locationManager.startUpdatingLocation()
         
         self.mapView.showsUserLocation = true
+        mapView.userTrackingMode = MKUserTrackingMode(rawValue: 2)!;
         
+        /*
+        // PubNub Delegate
+        PubNub.setDelegate(self);
+        PubNub.setConfiguration(self.config)
+        PubNub.connect()
+        self.channel = PNChannel.chane
+      */
+        
+        // Drawing path or route covered
         // 1
         let location1 = CLLocationCoordinate2D(
             latitude: 36.072587,
@@ -188,6 +200,8 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         longPress.minimumPressDuration = 1.0
         mapView.addGestureRecognizer(longPress)
         
+        
+        
         /*
         //Setting Visible Area
         //NC A&T Location
@@ -197,6 +211,10 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         centerMapOnLocation(initialLocation) */
     }
     
+
+    
+
+
     /*
     //Diplay a region
     let regionRadius: CLLocationDistance = 500
@@ -224,9 +242,41 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         
         self.locationManager.stopUpdatingLocation()
         
+       // let newLocation = location.last as CLLocation
+      //  print("current position: \(newLocation.coordinate.longitude), \(newLocation.coordinate.latitude)")
+        
+    }
+    // Drawing the route of the map covered
+    func locationManager(manager: CLLocationManager, didUpdateToLocation newLocation: CLLocation, fromLocation oldLocation: CLLocation) {
+        print("Present Location: \(newLocation.coordinate.latitude), \(newLocation.coordinate.longitude)")
+        
+        if let oldLocationNew = oldLocation as CLLocation?{
+            let oldCoordinates = oldLocationNew.coordinate
+            let newCoordinates = newLocation.coordinate
+            var area = [oldCoordinates, newCoordinates]
+            let polyline = MKPolyline(coordinates: &area, count: area.count);
+            mapView.addOverlay(polyline)
+            
+
+        }
     }
     
+
+    /*
+    func mapView(mapView: MKMapView, rendererForOverlay overlay: MKOverlay) -> MKOverlayRenderer {
+        if (overlay is MKPolyline){
+            let pr = MKPolylineRenderer(overlay: overlay)
+            pr.strokeColor = UIColor.redColor()
+            pr.lineWidth = 5
+            return pr
+        }
+        return overlay
+    }
+    */
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
+        print("didFailWithError \(error.description)")
+        let errorAlert = UIAlertView(title: "Error", message: "Failed to Get your location", delegate: nil, cancelButtonTitle: "Ok")
+        errorAlert.show()
         
         print("Errors: " + error.localizedDescription)
         
@@ -244,6 +294,8 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         mapView.addAnnotation(newAnotation)
         
     }
+    
+    
     
     
 }
