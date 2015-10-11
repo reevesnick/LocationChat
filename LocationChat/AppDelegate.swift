@@ -13,6 +13,7 @@ import Fabric
 import Crashlytics
 import TwitterKit
 import TwitterCore
+import PubNub
 
 
 
@@ -23,10 +24,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PNObjectEventListener {
     var config : PNConfiguration
     
     override init() {
-        config = PNConfiguration(publishKey: "Demo", subscribeKey: "Demo")
+        config = PNConfiguration(publishKey: "pub-c-330ec2e2-f6e7-4558-9010-5247b1f0b098", subscribeKey: "sub-c-bad78d26-6f9f-11e5-ac0d-02ee2ddab7fe")
         client = PubNub.clientWithConfiguration(config)
-        client.subscribeToChannels(["Your_Channel"], withPresence: false)
-        client.publish("Swift+PubNub!", toChannel: "Your_Channel", compressed: false, withCompletion: nil)
+        client.subscribeToChannels(["MainChannel"], withPresence: false)
+        client.publish("LocationChat", toChannel: "MainChannel", compressed: false, withCompletion: nil)
         
         super.init()
         client.addListener(self)

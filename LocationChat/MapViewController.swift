@@ -9,6 +9,7 @@
 import UIKit
 import MapKit
 import CoreLocation
+import PubNub
 
 
 
@@ -211,6 +212,16 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         centerMapOnLocation(initialLocation) */
     }
     
+    override func viewWillAppear(animated: Bool) {
+        locationManager.startUpdatingHeading()
+        locationManager.startUpdatingLocation()
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        locationManager.stopUpdatingHeading()
+        locationManager.stopUpdatingLocation()
+    }
+    
 
     
 
@@ -242,8 +253,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         
         self.locationManager.stopUpdatingLocation()
         
-       // let newLocation = location.last as CLLocation
-      //  print("current position: \(newLocation.coordinate.longitude), \(newLocation.coordinate.latitude)")
+      print("current position: \(location!.coordinate.longitude), \(location!.coordinate.latitude)")
         
     }
     // Drawing the route of the map covered
@@ -262,17 +272,17 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     }
     
 
-    /*
-    func mapView(mapView: MKMapView, rendererForOverlay overlay: MKOverlay) -> MKOverlayRenderer {
+    @available(iOS 7.0, *)
+    func mapView(mapView: MKMapView, rendererForOverlay overlay: MKOverlay) -> MKOverlayRenderer{
         if (overlay is MKPolyline){
             let pr = MKPolylineRenderer(overlay: overlay)
             pr.strokeColor = UIColor.redColor()
             pr.lineWidth = 5
             return pr
         }
-        return overlay
+        return MKPolylineRenderer()
     }
-    */
+  
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
         print("didFailWithError \(error.description)")
         let errorAlert = UIAlertView(title: "Error", message: "Failed to Get your location", delegate: nil, cancelButtonTitle: "Ok")
