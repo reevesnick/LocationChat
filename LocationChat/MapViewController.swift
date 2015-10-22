@@ -272,7 +272,6 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     }
     
 
-    @available(iOS 7.0, *)
     func mapView(mapView: MKMapView, rendererForOverlay overlay: MKOverlay) -> MKOverlayRenderer{
         if (overlay is MKPolyline){
             let pr = MKPolylineRenderer(overlay: overlay)

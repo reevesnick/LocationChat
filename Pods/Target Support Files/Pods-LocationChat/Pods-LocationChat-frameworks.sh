@@ -92,7 +92,6 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-LocationChat/FBSDKLoginKit.framework"
   install_framework "Pods-LocationChat/FBSDKShareKit.framework"
   install_framework "Pods-LocationChat/PubNub.framework"
-  install_framework "Pods-LocationChat/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-LocationChat/AFNetworking.framework"
@@ -103,5 +102,4 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-LocationChat/FBSDKLoginKit.framework"
   install_framework "Pods-LocationChat/FBSDKShareKit.framework"
   install_framework "Pods-LocationChat/PubNub.framework"
-  install_framework "Pods-LocationChat/SwiftyJSON.framework"
 fi

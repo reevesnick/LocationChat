@@ -13,7 +13,6 @@ target 'LocationChat' do
     pod 'Crashlytics'   #Crashlytics-Analytic tool to determine fatal crashes at runtime
     pod 'TwitterKit'  #TwitterKit Fabric
     pod 'TwitterCore' #TwitterCore Fabric
-    pod 'SwiftyJSON'
     pod 'Alamofire', '~>2.0'
     pod 'PubNub'
 end

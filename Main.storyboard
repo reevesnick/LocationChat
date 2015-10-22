@@ -24,7 +24,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="ALd-tj-7Zt"/>
                     <connections>
-                        <outlet property="mapView" destination="y1q-oT-OEP" id="DgX-jX-REK"/>
+                        <outlet property="mapView" destination="y1q-oT-OEP" id="8TG-ii-ZQC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jTd-oo-mTv" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -106,7 +106,7 @@
                                 <rect key="frame" x="0.0" y="92" width="320" height="68"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HTO-xQ-feq" id="sRO-GF-TlJ">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="67"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="zRy-0k-QFE">

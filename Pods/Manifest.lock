@@ -1,23 +1,23 @@
 PODS:
-  - AFNetworking (2.6.0):
-    - AFNetworking/NSURLConnection (= 2.6.0)
-    - AFNetworking/NSURLSession (= 2.6.0)
-    - AFNetworking/Reachability (= 2.6.0)
-    - AFNetworking/Security (= 2.6.0)
-    - AFNetworking/Serialization (= 2.6.0)
-    - AFNetworking/UIKit (= 2.6.0)
-  - AFNetworking/NSURLConnection (2.6.0):
+  - AFNetworking (2.6.1):
+    - AFNetworking/NSURLConnection (= 2.6.1)
+    - AFNetworking/NSURLSession (= 2.6.1)
+    - AFNetworking/Reachability (= 2.6.1)
+    - AFNetworking/Security (= 2.6.1)
+    - AFNetworking/Serialization (= 2.6.1)
+    - AFNetworking/UIKit (= 2.6.1)
+  - AFNetworking/NSURLConnection (2.6.1):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/NSURLSession (2.6.0):
+  - AFNetworking/NSURLSession (2.6.1):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (2.6.0)
-  - AFNetworking/Security (2.6.0)
-  - AFNetworking/Serialization (2.6.0)
-  - AFNetworking/UIKit (2.6.0):
+  - AFNetworking/Reachability (2.6.1)
+  - AFNetworking/Security (2.6.1)
+  - AFNetworking/Serialization (2.6.1)
+  - AFNetworking/UIKit (2.6.1):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - Alamofire (2.0.2)
@@ -52,12 +52,11 @@ PODS:
     - FBSDKCoreKit
   - FBSDKShareKit (4.7.0):
     - FBSDKCoreKit
-  - PubNub (4.0.7):
+  - PubNub (4.1.0):
     - CocoaLumberjack (= 2.0.0)
-    - PubNub/Core (= 4.0.7)
-  - PubNub/Core (4.0.7):
+    - PubNub/Core (= 4.1.0)
+  - PubNub/Core (4.1.0):
     - CocoaLumberjack (= 2.0.0)
-  - SwiftyJSON (2.3.0)
   - TwitterCore (1.11.4)
   - TwitterKit (1.11.4)
 
@@ -70,12 +69,11 @@ DEPENDENCIES:
   - FBSDKLoginKit
   - FBSDKShareKit
   - PubNub
-  - SwiftyJSON
   - TwitterCore
   - TwitterKit
 
 SPEC CHECKSUMS:
-  AFNetworking: 79f7eb1a0fcfa7beb409332b2ca49afe9ce53b05
+  AFNetworking: 8e4e60500beb8bec644cf575beee72990a76d399
   Alamofire: 8edbab00802a752bb5240cc2abe70e7e881488ad
   Bolts: 805a4a87413e49d4a0c2b7d469084cbc46b09342
   CocoaLumberjack: a6f77d987d65dc7ba86b0f84db7d0b9084f77bcb
@@ -84,8 +82,7 @@ SPEC CHECKSUMS:
   FBSDKCoreKit: eb580bfc2040ad44f4c0b4f4d0befb1d35bce59c
   FBSDKLoginKit: 01bce8dd3f3a26a023b0ba4ffdde7ef5062889fe
   FBSDKShareKit: 1f927bb05e4d36a99d5d5bf2f4b1ff294ce3e15c
-  PubNub: cc6b1aaa5010bc63232c30b724111a0c4de61fd1
-  SwiftyJSON: 8d6b61a70277ef2a5d710d372e06e7e2d87fb9e4
+  PubNub: 5aa62fef71ea39fc946124e16778ddb69f10f0a3
   TwitterCore: 171dbd2f8d55707397f461af5158d987fb34aa36
   TwitterKit: e96cc8d3bd32d544b8bc6d1b2febf2eab1c5298e
 
