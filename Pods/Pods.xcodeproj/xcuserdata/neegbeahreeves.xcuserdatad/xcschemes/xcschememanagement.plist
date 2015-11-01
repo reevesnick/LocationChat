@@ -49,9 +49,34 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Realm.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RealmSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftAddressBook.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>16CCFD2C09D735EB46797D8C201AB662</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>35C0C4FA4EA31BFCBB02EC45A2A35FC5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>4878C70B21CA37D7CB8A476BF986741B</key>
 		<dict>
 			<key>primary</key>
@@ -67,12 +92,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>5BFFF11B0EB656DEC606FC9C63BEA6E3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>5D69761C2CD2A1E5C013537B29CAB4CF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8C565A72E7261554FEF7917BE8D4ADC0</key>
+		<key>663694791BCC580D66D32FCB81CE4757</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -87,7 +117,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AAC0EBFC47811741DBEB4DAB0FE5BDA4</key>
+		<key>AF068C7C1ACF2AF3E4DDB23DC67C3445</key>
 		<dict>
 			<key>primary</key>
 			<true/>

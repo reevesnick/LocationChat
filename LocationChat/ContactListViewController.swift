@@ -8,10 +8,8 @@
 
 import Foundation
 import MapKit
-import ContactsUI
 import Contacts
 import AddressBook
-import AddressBookUI
 
 class ContactListViewController: UITableViewController{
     let contactName = ["Neegbeah","Brittany","Nino"];
@@ -47,7 +45,7 @@ class ContactListViewController: UITableViewController{
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("CustomCell", forIndexPath: indexPath) 
-        //cell.contactNameLabel?.text = contactName.text;
+        //cell.contactNameLabel?.text = contactName.text
         return cell
     }
     

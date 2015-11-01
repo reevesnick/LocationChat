@@ -15,6 +15,10 @@ target 'LocationChat' do
     pod 'TwitterCore' #TwitterCore Fabric
     pod 'Alamofire', '~>2.0'
     pod 'PubNub'
+    pod 'RealmSwift'
+
+
+
 end
 
 target 'LocationChatTests' do

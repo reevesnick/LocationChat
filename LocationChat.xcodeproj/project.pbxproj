@@ -11,15 +11,14 @@
 		D1118B161BAB216B003F9AD7 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D1118B151BAB216B003F9AD7 /* libz.tbd */; };
 		D1118B181BAB218A003F9AD7 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D1118B171BAB218A003F9AD7 /* libc++.tbd */; };
 		D1118B1A1BAB219B003F9AD7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1118B191BAB219B003F9AD7 /* SystemConfiguration.framework */; };
-		D148E5631BBC7FE900FD57F0 /* ContactCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D148E5621BBC7FE900FD57F0 /* ContactCustomCell.swift */; settings = {ASSET_TAGS = (); }; };
-		D148E5651BBC810F00FD57F0 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = D148E5641BBC810F00FD57F0 /* Contact.swift */; settings = {ASSET_TAGS = (); }; };
+		D148E5631BBC7FE900FD57F0 /* ContactCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D148E5621BBC7FE900FD57F0 /* ContactCustomCell.swift */; };
 		D1A5126D1B98987A00BA6509 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A5126C1B98987A00BA6509 /* AppDelegate.swift */; };
 		D1A512701B98987A00BA6509 /* LocationChat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D1A5126E1B98987A00BA6509 /* LocationChat.xcdatamodeld */; };
 		D1A512771B98987A00BA6509 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1A512761B98987A00BA6509 /* Images.xcassets */; };
 		D1A5127A1B98987A00BA6509 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1A512781B98987A00BA6509 /* LaunchScreen.xib */; };
 		D1A512861B98987A00BA6509 /* LocationChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A512851B98987A00BA6509 /* LocationChatTests.swift */; };
-		D1C6AAA51BA32869008E45B9 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C6AAA41BA32869008E45B9 /* MapViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		D1C6AAA71BA328B2008E45B9 /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C6AAA61BA328B2008E45B9 /* ContactListViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		D1C6AAA51BA32869008E45B9 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C6AAA41BA32869008E45B9 /* MapViewController.swift */; };
+		D1C6AAA71BA328B2008E45B9 /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C6AAA61BA328B2008E45B9 /* ContactListViewController.swift */; };
 		D1C6AAA91BA32AFB008E45B9 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1C6AAA81BA32AFB008E45B9 /* AddressBook.framework */; };
 		D1C6AAAB1BA32AFF008E45B9 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1C6AAAA1BA32AFF008E45B9 /* AddressBookUI.framework */; };
 		D1C6AAAD1BA32B06008E45B9 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1C6AAAC1BA32B06008E45B9 /* Social.framework */; };
@@ -28,10 +27,10 @@
 		D1C6AAB31BA32B27008E45B9 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1C6AAB21BA32B27008E45B9 /* CoreFoundation.framework */; };
 		D1C6AAB51BA32B32008E45B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1C6AAB41BA32B32008E45B9 /* Foundation.framework */; };
 		D1C6AAB91BA32B52008E45B9 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1C6AAB81BA32B52008E45B9 /* Twitter.framework */; };
-		D1DEABF71BA8BCF600E927B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1DEABF61BA8BCF600E927B8 /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
+		D1DEABF71BA8BCF600E927B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1DEABF61BA8BCF600E927B8 /* Main.storyboard */; };
 		D1DEABF81BA8BFB900E927B8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1C6AAB61BA32B40008E45B9 /* MapKit.framework */; };
-		D1F977591BA1E3510078A1A0 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F977581BA1E3510078A1A0 /* LoginScreen.swift */; settings = {ASSET_TAGS = (); }; };
-		D1F9775B1BA1E3600078A1A0 /* SignupScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F9775A1BA1E3600078A1A0 /* SignupScreen.swift */; settings = {ASSET_TAGS = (); }; };
+		D1F977591BA1E3510078A1A0 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F977581BA1E3510078A1A0 /* LoginScreen.swift */; };
+		D1F9775B1BA1E3600078A1A0 /* SignupScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F9775A1BA1E3600078A1A0 /* SignupScreen.swift */; };
 		F5A1A2A952305C577037F0FC /* Pods_LocationChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A45A97FC018CF87EBB8F9E5 /* Pods_LocationChat.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,7 +53,6 @@
 		D1118B191BAB219B003F9AD7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D13E4E581BC9D1BC00A07F03 /* LocationChat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LocationChat-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		D148E5621BBC7FE900FD57F0 /* ContactCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactCustomCell.swift; sourceTree = "<group>"; };
-		D148E5641BBC810F00FD57F0 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		D1A512671B98987A00BA6509 /* LocationChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1A5126B1B98987A00BA6509 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1A5126C1B98987A00BA6509 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -139,7 +137,6 @@
 			children = (
 				D1C6AAA61BA328B2008E45B9 /* ContactListViewController.swift */,
 				D148E5621BBC7FE900FD57F0 /* ContactCustomCell.swift */,
-				D148E5641BBC810F00FD57F0 /* Contact.swift */,
 			);
 			name = Contact;
 			sourceTree = "<group>";
@@ -400,7 +397,6 @@
 				D1F977591BA1E3510078A1A0 /* LoginScreen.swift in Sources */,
 				D1A512701B98987A00BA6509 /* LocationChat.xcdatamodeld in Sources */,
 				D148E5631BBC7FE900FD57F0 /* ContactCustomCell.swift in Sources */,
-				D148E5651BBC810F00FD57F0 /* Contact.swift in Sources */,
 				D1F9775B1BA1E3600078A1A0 /* SignupScreen.swift in Sources */,
 				D1C6AAA71BA328B2008E45B9 /* ContactListViewController.swift in Sources */,
 				D1A5126D1B98987A00BA6509 /* AppDelegate.swift in Sources */,

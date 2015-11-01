@@ -21,12 +21,12 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - Alamofire (2.0.2)
-  - Bolts (1.3.0):
-    - Bolts/AppLinks (= 1.3.0)
-    - Bolts/Tasks (= 1.3.0)
-  - Bolts/AppLinks (1.3.0):
+  - Bolts (1.4.0):
+    - Bolts/AppLinks (= 1.4.0)
+    - Bolts/Tasks (= 1.4.0)
+  - Bolts/AppLinks (1.4.0):
     - Bolts/Tasks
-  - Bolts/Tasks (1.3.0)
+  - Bolts/Tasks (1.4.0)
   - CocoaLumberjack (2.0.0):
     - CocoaLumberjack/Default (= 2.0.0)
     - CocoaLumberjack/Extensions (= 2.0.0)
@@ -39,26 +39,32 @@ PODS:
   - Fabric (1.5.5):
     - Fabric/Base (= 1.5.5)
   - Fabric/Base (1.5.5)
-  - FBSDKCoreKit (4.7.0):
+  - FBSDKCoreKit (4.7.1):
     - Bolts (~> 1.1)
-    - FBSDKCoreKit/arc (= 4.7.0)
-    - FBSDKCoreKit/no-arc (= 4.7.0)
-  - FBSDKCoreKit/arc (4.7.0):
+    - FBSDKCoreKit/arc (= 4.7.1)
+    - FBSDKCoreKit/no-arc (= 4.7.1)
+  - FBSDKCoreKit/arc (4.7.1):
     - Bolts (~> 1.1)
-  - FBSDKCoreKit/no-arc (4.7.0):
+  - FBSDKCoreKit/no-arc (4.7.1):
     - Bolts (~> 1.1)
     - FBSDKCoreKit/arc
-  - FBSDKLoginKit (4.7.0):
+  - FBSDKLoginKit (4.7.1):
     - FBSDKCoreKit
-  - FBSDKShareKit (4.7.0):
+  - FBSDKShareKit (4.7.1):
     - FBSDKCoreKit
-  - PubNub (4.1.0):
+  - PubNub (4.1.1):
     - CocoaLumberjack (= 2.0.0)
-    - PubNub/Core (= 4.1.0)
-  - PubNub/Core (4.1.0):
+    - PubNub/Core (= 4.1.1)
+  - PubNub/Core (4.1.1):
     - CocoaLumberjack (= 2.0.0)
-  - TwitterCore (1.11.4)
-  - TwitterKit (1.11.4)
+  - Realm (0.96.2):
+    - Realm/Headers (= 0.96.2)
+  - Realm/Headers (0.96.2)
+  - RealmSwift (0.96.2):
+    - Realm (= 0.96.2)
+  - SwiftAddressBook (0.5.0)
+  - TwitterCore (1.12.0)
+  - TwitterKit (1.12.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.5)
@@ -69,21 +75,26 @@ DEPENDENCIES:
   - FBSDKLoginKit
   - FBSDKShareKit
   - PubNub
+  - RealmSwift
+  - SwiftAddressBook
   - TwitterCore
   - TwitterKit
 
 SPEC CHECKSUMS:
   AFNetworking: 8e4e60500beb8bec644cf575beee72990a76d399
   Alamofire: 8edbab00802a752bb5240cc2abe70e7e881488ad
-  Bolts: 805a4a87413e49d4a0c2b7d469084cbc46b09342
+  Bolts: 0e9bce58b9b9f5e8a7a4d47b16d2fabec289072b
   CocoaLumberjack: a6f77d987d65dc7ba86b0f84db7d0b9084f77bcb
   Crashlytics: 41c082440d2e14da444186fff65e79c0b4b35d4c
   Fabric: 190bf1a6eb65f7500de1347d027d2e59a7e53db1
-  FBSDKCoreKit: eb580bfc2040ad44f4c0b4f4d0befb1d35bce59c
-  FBSDKLoginKit: 01bce8dd3f3a26a023b0ba4ffdde7ef5062889fe
-  FBSDKShareKit: 1f927bb05e4d36a99d5d5bf2f4b1ff294ce3e15c
-  PubNub: 5aa62fef71ea39fc946124e16778ddb69f10f0a3
-  TwitterCore: 171dbd2f8d55707397f461af5158d987fb34aa36
-  TwitterKit: e96cc8d3bd32d544b8bc6d1b2febf2eab1c5298e
+  FBSDKCoreKit: 9141b70960a37930850370495fe565f4a27ac141
+  FBSDKLoginKit: c11ed3c2833472db3bb4a4aecf27af4a6f69b173
+  FBSDKShareKit: 213adf63e073f41a346b0e7a689805880dc5150e
+  PubNub: f6f2c30142afa2c5ea503b664c1ec00c6ac50e5b
+  Realm: 3ce8448151c571e90b85002d984d7f93f54fc8a3
+  RealmSwift: 485599fe54e35461c4a0daa7d01d8fbf11424873
+  SwiftAddressBook: efdf08a9ba020a8eef927331213ebd13a8e171d1
+  TwitterCore: a1feadb793512962003ed2bad23e846c8daa4efd
+  TwitterKit: c27e7b997cd82d5c626fcfd8b1dead1e15dac7ca
 
 COCOAPODS: 0.39.0

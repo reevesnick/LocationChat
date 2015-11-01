@@ -12,6 +12,7 @@ import Foundation
 class ContactCustomCell: UITableViewCell {
     @IBOutlet weak var contactNameLabel: UILabel!
     @IBOutlet weak var contactProfilePic: UILabel!
+    @IBOutlet weak var contacthoneNumberLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
