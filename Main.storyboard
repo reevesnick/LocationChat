@@ -158,7 +158,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="ohn-dq-vom" rowHeight="119" style="IBUITableViewCellStyleDefault" id="vKu-lw-aa2">
-                                <rect key="frame" x="0.0" y="28" width="320" height="119"/>
+                                <rect key="frame" x="0.0" y="92" width="320" height="119"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vKu-lw-aa2" id="rQs-SX-UBK">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="118"/>
@@ -357,6 +357,7 @@
                         <outlet property="comfirmPassword" destination="M0n-lF-pjS" id="lMI-qB-n7C"/>
                         <outlet property="password" destination="hmy-EV-f5w" id="eVP-xt-Qbh"/>
                         <outlet property="username" destination="ekG-wj-sh5" id="J56-VQ-hmy"/>
+                        <segue destination="k52-h3-XEj" kind="modal" id="I3c-CL-fqD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4gO-XK-kve" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -16,6 +16,7 @@ target 'LocationChat' do
     pod 'Alamofire', '~>2.0'
     pod 'PubNub'
     pod 'RealmSwift'
+    pod 'SwiftAddressBook'
 
 
 
