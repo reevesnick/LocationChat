@@ -10,5 +10,8 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import <PubNub/PubNub.h>
+#import <DZNEmptyDataSet/UIScrollView+EmptyDataSet.h>
+
+
 
 #endif /* LocationChat_Bridging_Header_h */

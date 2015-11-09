@@ -10,9 +10,10 @@ import Foundation
 import MapKit
 import Contacts
 import AddressBook
+import DZNEmptyDataSet
 
 
-class ContactListViewController: UITableViewController{
+class ContactListViewController: UITableViewController, DZNEmptyDataSetSource, DZNEmptyDataSetDelegate{
     let contactName = ["Neegbeah","Brittany","Nino"];
     
     let authStatus = ABAddressBookGetAuthorizationStatus()
@@ -28,7 +29,20 @@ class ContactListViewController: UITableViewController{
         
         navigationItem.title = "Contacts"
         
+        //DZEmptyDataSet Implementation
+        self.tableView.emptyDataSetSource = self
+        self.tableView.emptyDataSetDelegate = self
         
+        // A little trick for removing the cell separators
+        self.tableView.tableFooterView = UIView()
+        
+        
+    }
+    
+    // De Allocation
+    deinit {
+        self.tableView.emptyDataSetSource = nil
+        self.tableView.emptyDataSetDelegate = nil
     }
     
     override func didReceiveMemoryWarning() {
@@ -49,7 +63,6 @@ class ContactListViewController: UITableViewController{
         //cell.contactNameLabel?.text = contactName.text
         return cell
     }
-    
 }
 
 

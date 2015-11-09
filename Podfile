@@ -17,6 +17,7 @@ target 'LocationChat' do
     pod 'PubNub'
     pod 'RealmSwift'
     pod 'SwiftAddressBook'
+    pod 'DZNEmptyDataSet'
 
 
 

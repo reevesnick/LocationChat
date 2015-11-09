@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="k52-h3-XEj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15C31f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="k52-h3-XEj">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
@@ -80,11 +80,11 @@
             </objects>
             <point key="canvasLocation" x="642" y="164"/>
         </scene>
-        <!--Contacts-->
+        <!--Schedule-->
         <scene sceneID="pWp-zN-NKW">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Keo-Xe-lZo" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Contacts" id="JwQ-k1-afI"/>
+                    <tabBarItem key="tabBarItem" title="Schedule" id="JwQ-k1-afI"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="six-Fo-4lk">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -100,7 +100,7 @@
             </objects>
             <point key="canvasLocation" x="642" y="790"/>
         </scene>
-        <!--Contacts-->
+        <!--Empty Data Set Delegate-->
         <scene sceneID="QMG-dk-YMy">
             <objects>
                 <tableViewController id="2Sw-ZL-mRO" sceneMemberID="viewController">
@@ -114,7 +114,7 @@
                                 <rect key="frame" x="0.0" y="92" width="320" height="68"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HTO-xQ-feq" id="sRO-GF-TlJ">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="67"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="67.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="zRy-0k-QFE">
@@ -139,13 +139,107 @@
                         <connections>
                             <outlet property="dataSource" destination="2Sw-ZL-mRO" id="C03-P7-qOh"/>
                             <outlet property="delegate" destination="2Sw-ZL-mRO" id="yxd-bk-trA"/>
+                            <outlet property="emptyDataSetDelegate" destination="2Sw-ZL-mRO" id="HBZ-FH-DNa"/>
+                            <outlet property="emptyDataSetSource" destination="2Sw-ZL-mRO" id="i2y-Uw-mcY"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Contacts" id="Eee-EL-T2K"/>
+                    <navigationItem key="navigationItem" title="Schedule" id="Eee-EL-T2K">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="yPL-OP-C7X">
+                            <connections>
+                                <segue destination="n6j-hG-dVS" kind="modal" id="vNS-JG-J21"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xEJ-Q9-npl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1174" y="790"/>
+        </scene>
+        <!--Add Schedule-->
+        <scene sceneID="tXo-5M-b1Y">
+            <objects>
+                <viewController id="kg2-I5-bbe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tbm-A5-3bh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="9kh-tw-T6K">
+                                <rect key="frame" x="112" y="92" width="188" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Class Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="D3k-Qf-syd">
+                                <rect key="frame" x="20" y="96" width="71" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teacher" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="h2o-QB-qmq">
+                                <rect key="frame" x="20" y="168" width="71" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="N64-kh-8HX">
+                                <rect key="frame" x="112" y="168" width="188" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bHe-5W-aYq">
+                                <rect key="frame" x="20" y="258" width="71" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ebq-xr-hoO">
+                                <rect key="frame" x="20" y="375" width="71" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" id="lPi-oT-hGc">
+                                <rect key="frame" x="20" y="287" width="280" height="74"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <date key="date" timeIntervalSinceReferenceDate="468527196.38628399">
+                                    <!--2015-11-06 18:26:36 +0000-->
+                                </date>
+                            </datePicker>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" id="3hK-7c-HdB">
+                                <rect key="frame" x="20" y="412" width="280" height="74"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <date key="date" timeIntervalSinceReferenceDate="468527196.38628399">
+                                    <!--2015-11-06 18:26:36 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="71q-YU-q4g">
+                                <rect key="frame" x="102" y="518" width="117" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <state key="normal" title="Submit Schedule"/>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Schedule" id="9Zy-2g-kuF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FqC-F1-YUN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2123" y="790"/>
         </scene>
         <!--Frequent Locations-->
         <scene sceneID="pgx-Fa-kGL">
@@ -158,18 +252,18 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="ohn-dq-vom" rowHeight="119" style="IBUITableViewCellStyleDefault" id="vKu-lw-aa2">
-                                <rect key="frame" x="0.0" y="92" width="320" height="119"/>
+                                <rect key="frame" x="0.0" y="28" width="320" height="119"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vKu-lw-aa2" id="rQs-SX-UBK">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="118"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="118.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Locations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ohn-dq-vom">
-                                            <rect key="frame" x="15" y="0.0" width="290" height="118"/>
+                                            <rect key="frame" x="15" y="0.0" width="290" height="118.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -383,6 +477,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F3o-0P-d2u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="642" y="1475"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QEW-IG-boL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="n6j-hG-dVS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Wxy-Xt-3QD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="kg2-I5-bbe" kind="relationship" relationship="rootViewController" id="FcU-g3-724"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QFP-kc-N2n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1591" y="790"/>
         </scene>
     </scenes>
 </document>
