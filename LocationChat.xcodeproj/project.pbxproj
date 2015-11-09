@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6300DC6A1BED33EE00CF5A90 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6300DC691BED33EE00CF5A90 /* ViewController.m */; settings = {ASSET_TAGS = (); }; };
+		6383486E1BEBC79700B716AC /* ToDoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6383486D1BEBC79700B716AC /* ToDoListTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		D1118B141BAB20BB003F9AD7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1118B131BAB20BB003F9AD7 /* Security.framework */; };
 		D1118B161BAB216B003F9AD7 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D1118B151BAB216B003F9AD7 /* libz.tbd */; };
 		D1118B181BAB218A003F9AD7 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D1118B171BAB218A003F9AD7 /* libc++.tbd */; };
@@ -46,6 +48,9 @@
 
 /* Begin PBXFileReference section */
 		4A45A97FC018CF87EBB8F9E5 /* Pods_LocationChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LocationChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6300DC681BED33EE00CF5A90 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6300DC691BED33EE00CF5A90 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6383486D1BEBC79700B716AC /* ToDoListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoListTableViewController.swift; sourceTree = "<group>"; };
 		816A688C345FCCCB28C2BC48 /* Pods-LocationChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocationChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-LocationChat/Pods-LocationChat.release.xcconfig"; sourceTree = "<group>"; };
 		D1118B131BAB20BB003F9AD7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		D1118B151BAB216B003F9AD7 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
@@ -176,6 +181,7 @@
 				D1A512781B98987A00BA6509 /* LaunchScreen.xib */,
 				D1A5126E1B98987A00BA6509 /* LocationChat.xcdatamodeld */,
 				D1A5126A1B98987A00BA6509 /* Supporting Files */,
+				6383486D1BEBC79700B716AC /* ToDoListTableViewController.swift */,
 			);
 			path = LocationChat;
 			sourceTree = "<group>";
@@ -208,6 +214,8 @@
 		D1C6AABA1BA32B56008E45B9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6300DC681BED33EE00CF5A90 /* ViewController.h */,
+				6300DC691BED33EE00CF5A90 /* ViewController.m */,
 				D1C6AAB81BA32B52008E45B9 /* Twitter.framework */,
 				D1C6AAB61BA32B40008E45B9 /* MapKit.framework */,
 				D1C6AAB41BA32B32008E45B9 /* Foundation.framework */,
@@ -393,6 +401,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6300DC6A1BED33EE00CF5A90 /* ViewController.m in Sources */,
 				D1C6AAA51BA32869008E45B9 /* MapViewController.swift in Sources */,
 				D1F977591BA1E3510078A1A0 /* LoginScreen.swift in Sources */,
 				D1A512701B98987A00BA6509 /* LocationChat.xcdatamodeld in Sources */,
@@ -400,6 +409,7 @@
 				D1F9775B1BA1E3600078A1A0 /* SignupScreen.swift in Sources */,
 				D1C6AAA71BA328B2008E45B9 /* ContactListViewController.swift in Sources */,
 				D1A5126D1B98987A00BA6509 /* AppDelegate.swift in Sources */,
+				6383486E1BEBC79700B716AC /* ToDoListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
