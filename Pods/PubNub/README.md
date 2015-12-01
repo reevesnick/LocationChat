@@ -1,4 +1,4 @@
-# PubNub 4.1.1 for iOS 7+
+# PubNub 4.1.3 for iOS 7+
 ## Please direct all Support Questions and Concerns to Support@PubNub.com
 ## Complete Docs
 Check out our [official docs page](http://www.pubnub.com/docs/ios-objective-c/pubnub-objective-c-sdk-v4)
@@ -163,8 +163,6 @@ For any PubNub operation you call, you will be returned either a Result, or a St
     }
 }];
 ```
-
-Where **myResultHandler** is a callback with history results, and **myStatusHandler** is callback for **everything else**.
 
 When a result comes in, we can inspect the data attribute on the result object for the messages, start, and end attributes.
 

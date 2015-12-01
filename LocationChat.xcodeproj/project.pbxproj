@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6300DC6A1BED33EE00CF5A90 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6300DC691BED33EE00CF5A90 /* ViewController.m */; settings = {ASSET_TAGS = (); }; };
-		6383486E1BEBC79700B716AC /* ToDoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6383486D1BEBC79700B716AC /* ToDoListTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		6300DC6A1BED33EE00CF5A90 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6300DC691BED33EE00CF5A90 /* ViewController.m */; };
+		6383486E1BEBC79700B716AC /* ToDoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6383486D1BEBC79700B716AC /* ToDoListTableViewController.swift */; };
 		D1118B141BAB20BB003F9AD7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1118B131BAB20BB003F9AD7 /* Security.framework */; };
 		D1118B161BAB216B003F9AD7 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D1118B151BAB216B003F9AD7 /* libz.tbd */; };
 		D1118B181BAB218A003F9AD7 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D1118B171BAB218A003F9AD7 /* libc++.tbd */; };
 		D1118B1A1BAB219B003F9AD7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1118B191BAB219B003F9AD7 /* SystemConfiguration.framework */; };
 		D148E5631BBC7FE900FD57F0 /* ContactCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D148E5621BBC7FE900FD57F0 /* ContactCustomCell.swift */; };
+		D14A07001BF5380600FF1F56 /* ScheduleObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D14A06FF1BF5380600FF1F56 /* ScheduleObject.m */; };
+		D14A07041BF539AE00FF1F56 /* ScheduleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D14A07031BF539AE00FF1F56 /* ScheduleTableViewCell.m */; };
 		D1A5126D1B98987A00BA6509 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A5126C1B98987A00BA6509 /* AppDelegate.swift */; };
 		D1A512701B98987A00BA6509 /* LocationChat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D1A5126E1B98987A00BA6509 /* LocationChat.xcdatamodeld */; };
 		D1A512771B98987A00BA6509 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1A512761B98987A00BA6509 /* Images.xcassets */; };
@@ -58,6 +60,10 @@
 		D1118B191BAB219B003F9AD7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D13E4E581BC9D1BC00A07F03 /* LocationChat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LocationChat-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		D148E5621BBC7FE900FD57F0 /* ContactCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactCustomCell.swift; sourceTree = "<group>"; };
+		D14A06FE1BF5380600FF1F56 /* ScheduleObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleObject.h; sourceTree = "<group>"; };
+		D14A06FF1BF5380600FF1F56 /* ScheduleObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleObject.m; sourceTree = "<group>"; };
+		D14A07021BF539AE00FF1F56 /* ScheduleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleTableViewCell.h; sourceTree = "<group>"; };
+		D14A07031BF539AE00FF1F56 /* ScheduleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleTableViewCell.m; sourceTree = "<group>"; };
 		D1A512671B98987A00BA6509 /* LocationChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1A5126B1B98987A00BA6509 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1A5126C1B98987A00BA6509 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +152,17 @@
 			name = Contact;
 			sourceTree = "<group>";
 		};
+		D14A07011BF5398300FF1F56 /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				D14A06FE1BF5380600FF1F56 /* ScheduleObject.h */,
+				D14A06FF1BF5380600FF1F56 /* ScheduleObject.m */,
+				D14A07021BF539AE00FF1F56 /* ScheduleTableViewCell.h */,
+				D14A07031BF539AE00FF1F56 /* ScheduleTableViewCell.m */,
+			);
+			name = Schedule;
+			sourceTree = "<group>";
+		};
 		D1A5125E1B98987A00BA6509 = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +186,7 @@
 		D1A512691B98987A00BA6509 /* LocationChat */ = {
 			isa = PBXGroup;
 			children = (
+				D14A07011BF5398300FF1F56 /* Schedule */,
 				D13E4E581BC9D1BC00A07F03 /* LocationChat-Bridging-Header.h */,
 				D148E5611BBC7FB800FD57F0 /* Contact */,
 				D1C6AABA1BA32B56008E45B9 /* Frameworks */,
@@ -404,12 +422,14 @@
 				6300DC6A1BED33EE00CF5A90 /* ViewController.m in Sources */,
 				D1C6AAA51BA32869008E45B9 /* MapViewController.swift in Sources */,
 				D1F977591BA1E3510078A1A0 /* LoginScreen.swift in Sources */,
+				D14A07001BF5380600FF1F56 /* ScheduleObject.m in Sources */,
 				D1A512701B98987A00BA6509 /* LocationChat.xcdatamodeld in Sources */,
 				D148E5631BBC7FE900FD57F0 /* ContactCustomCell.swift in Sources */,
 				D1F9775B1BA1E3600078A1A0 /* SignupScreen.swift in Sources */,
 				D1C6AAA71BA328B2008E45B9 /* ContactListViewController.swift in Sources */,
 				D1A5126D1B98987A00BA6509 /* AppDelegate.swift in Sources */,
 				6383486E1BEBC79700B716AC /* ToDoListTableViewController.swift in Sources */,
+				D14A07041BF539AE00FF1F56 /* ScheduleTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
